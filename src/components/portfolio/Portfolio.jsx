@@ -19,7 +19,7 @@ const Portfolio = () => {
                         <p className='text-light'>{value.desc}</p>
                         <div className="portfolio__item-cta">
                             <a href={value.github} target="_blank" className='btn'>Github</a>
-                            <a href={value.liveDemo} className='btn btn-primary'>Live Demo</a>
+                            {/* <a href={value.liveDemo} className='btn btn-primary'>Live Demo</a> */}
                         </div>
                     </article>
                 ))}

@@ -10,19 +10,19 @@ const Nav = () => {
     const [activeNav, setActiveNav] = useState('#')
     return ( 
         <nav>
-            <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
+            <a href="#" onClick={() => setActiveNav('#')} title='Home' className={activeNav === '#' ? 'active' : ''}>
                 <BiHome />
             </a>
-            <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>
+            <a href="#about" onClick={() => setActiveNav('#about')} title='About Me' className={activeNav === '#about' ? 'active' : ''}>
                 <AiOutlineUser />
             </a>
-            <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? 'active' : ''}>
+            <a href="#skills" onClick={() => setActiveNav('#skills')} title='My Skills' className={activeNav === '#skills' ? 'active' : ''}>
                 < RiCustomerService2Line />    
             </a>
-            <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}>
+            <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} title='My Portfolio' className={activeNav === '#portfolio' ? 'active' : ''}>
                 <MdOutlineComputer />
             </a>
-            <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>
+            <a href="#contact" onClick={() => setActiveNav('#contact')} title='Contact Me' className={activeNav === '#contact' ? 'active' : ''}>
                 <AiOutlineMessage />
             </a>
         </nav>
